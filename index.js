@@ -72,7 +72,8 @@ exports.handler = async (event, lambdaContext, callback) => {
     })
 
     const response = { context, answer, suggestions, linksOut }
-    res.body = response;
+ 
+    res.body = JSON.stringify(response, null, 2)
     callback(null, res);
   } catch (err) {
     console.error(err)
