@@ -1,2 +1,5 @@
 *.zip
+.DS_Store
+.env
+credentials.json
 node_modules/
